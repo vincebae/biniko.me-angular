@@ -8,9 +8,15 @@
         <p>This is home of biniko.me</p>
       </div>
       <div class="content" role="main">
-        <h3>Angular features:</h3>
+        <h3>Tech stacks used:</h3>
         <ul>
-          <li *ngFor="let feature of features">{{feature.name | uppercase}}</li>
+          <li *ngFor="let tech of techstack">
+            {{tech.role}}
+            <ul>
+              <li>{{tech.name}}</li>
+              <li>tags: {{tech.tags.join(", ")}}</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

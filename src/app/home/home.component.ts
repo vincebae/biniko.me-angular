@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NgFeaturesService, NgFeature } from '../ng-features.service';
+import { Tech } from '../services/techstack/tech';
+import { TechstackService } from '../services/techstack/techstack.service';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +10,12 @@ import { NgFeaturesService, NgFeature } from '../ng-features.service';
 export class HomeComponent implements OnInit {
 
   title = 'biniko.me';
-  features: Array<NgFeature> = [];
+  techstack: Array<Tech> = [];
 
-  constructor(private ngFeatures: NgFeaturesService) { }
+  constructor(private techstackService: TechstackService) { }
 
   ngOnInit() {
-    this.features = this.ngFeatures.getFeatures();
+    this.techstack = this.techstackService.getTechstack();
   }
 
 }
