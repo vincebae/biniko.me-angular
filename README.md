@@ -1,6 +1,6 @@
 # Web server for biniko.me
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+Frontend web server for biniko.me built with [Angular CLI](https://github.com/angular/angular-cli) / Typescript.
 
 ## Required modules
 
